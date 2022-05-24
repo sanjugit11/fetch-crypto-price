@@ -1,5 +1,5 @@
 //new WebSocket('wss://stream.binance.com:9443/ws/dotusdt@kline_1m');   //one more calling way
-
+const WebSocket = require('ws');
 const allTickers = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
 
 let socketPrice = document.getElementById('cryptoPrice'); 
